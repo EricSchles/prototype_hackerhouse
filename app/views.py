@@ -16,6 +16,10 @@ def create_login():
         username = request.form.get("username")
         password = request.form.get("password")
     return redirect(url_for("index"))
+
+@app.route("/boot",methods=["GET","POST"])
+def boot():
+    return render_template("testbootstrap.html")
 #CMS
 # Video
 # MarkDown
